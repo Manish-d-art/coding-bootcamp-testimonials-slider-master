@@ -14,13 +14,17 @@ body{
     font-family: 'Inter', sans-serif;
     background: url("/assets/images/pattern-bg.svg"),url("/assets/images/pattern-curve.svg"),url("/assets/images/pattern-quotes.svg");
     background-repeat: no-repeat,no-repeat,no-repeat;
-    background-position:20px 25px,-20px 90vh,150px 370px;
-    background-size: 90%,contain,20%;
+    background-position:20px 25px,-20px 90vh,42vw 55vh;
+    background-size: 90%,contain,15%;
+    @media (min-width:500px) and (max-width:900px) {
+        background-position:100px 25px,-20px 100vh,240px 547px;
+        background-size: 70%,contain,15% !important;
+    }
 }
 
 .slider{
 
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 2rem 3rem 2rem;
     .slide{
 
         .slider__img-container{
@@ -50,9 +54,9 @@ body{
 
         }
 
-        .slider__content-container{
-            margin-top: clamp(2rem,10vw,4rem);
-            .slider__content{
+        .slider__text-container{
+            margin-top: clamp(2rem,10vw,15rem);
+            .slider__text{
                 text-align: center;
                 color: rgba(32, 32, 70, 0.7);
                 // font-weight: 500;
@@ -61,7 +65,7 @@ body{
         }
 
         .hero-block{
-            font-size: 14px;
+            font-size: 16px;
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -71,7 +75,7 @@ body{
             }
             .hero-prof{
                 color:$GrayishBlue;
-                font-size: 13px;
+                font-size: 15px;
             }
         }
     }
