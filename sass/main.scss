@@ -21,7 +21,7 @@ body{
         background-size: 70%,contain,15% !important;
     }
     @media (min-width:992px) {
-        background-position:94% 25px,-20px 100vh,240px 547px;
+        background-position:94% 42px,-20px 100vh,240px 547px;
         background-size: contain,contain,15% !important;
     }
 }
@@ -99,12 +99,25 @@ body{
             align-items: center;
             flex-direction: column;
             margin-top: clamp(1.5rem,5vw,4rem);
+
+            @media (min-width:992px) {
+                font-size: 22px;
+                // text-align: start ;
+                flex-direction: row !important;
+                align-items: baseline !important;
+                // align-items: start !important;
+            }
+
             .hero-name{
                 font-weight: bold;
+                margin-right: 1rem;
             }
             .hero-prof{
                 color:$GrayishBlue;
                 font-size: 15px;
+                @media (min-width:992px) {
+                    font-size: 20px !important;
+                }
             }
         }
     }

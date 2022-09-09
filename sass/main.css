@@ -21,7 +21,7 @@ body {
 }
 @media (min-width: 992px) {
   body {
-    background-position: 94% 25px, -20px 100vh, 240px 547px;
+    background-position: 94% 42px, -20px 100vh, 240px 547px;
     background-size: contain, contain, 15% !important;
   }
 }
@@ -98,10 +98,23 @@ body {
   flex-direction: column;
   margin-top: clamp(1.5rem, 5vw, 4rem);
 }
+@media (min-width: 992px) {
+  .slider .slide .hero-block {
+    font-size: 22px;
+    flex-direction: row !important;
+    align-items: baseline !important;
+  }
+}
 .slider .slide .hero-block .hero-name {
   font-weight: bold;
+  margin-right: 1rem;
 }
 .slider .slide .hero-block .hero-prof {
   color: hsl(240deg, 18%, 77%);
   font-size: 15px;
+}
+@media (min-width: 992px) {
+  .slider .slide .hero-block .hero-prof {
+    font-size: 20px !important;
+  }
 }/*# sourceMappingURL=main.css.map */
