@@ -16,7 +16,7 @@ body{
     background-repeat: no-repeat,no-repeat,no-repeat;
     background-position:20px 25px,-20px 90vh,42vw 55vh;
     background-size: 90%,contain,15%;
-    @media (min-width:500px) and (max-width:900px) {
+    @media (min-width:500px) and (max-width:991px) {
         background-position:100px 25px,-20px 100vh,240px 547px;
         background-size: 70%,contain,15% !important;
     }
@@ -26,6 +26,12 @@ body{
 
     padding: 1.5rem 2rem 3rem 2rem;
     .slide{
+        display: flex;
+        flex-direction: column;
+        @media (min-width:992px) {
+            flex-direction: row-reverse !important;
+            
+        }
 
         .slider__img-container{
             // padding:clamp(2rem,5vw,5rem);
@@ -55,7 +61,7 @@ body{
         }
 
         .slider__text-container{
-            margin-top: clamp(2rem,10vw,15rem);
+            margin-top: clamp(2rem,12vw,20rem);
             .slider__text{
                 text-align: center;
                 color: rgba(32, 32, 70, 0.7);

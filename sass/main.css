@@ -13,7 +13,7 @@ body {
   background-position: 20px 25px, -20px 90vh, 42vw 55vh;
   background-size: 90%, contain, 15%;
 }
-@media (min-width: 500px) and (max-width: 900px) {
+@media (min-width: 500px) and (max-width: 991px) {
   body {
     background-position: 100px 25px, -20px 100vh, 240px 547px;
     background-size: 70%, contain, 15% !important;
@@ -22,6 +22,15 @@ body {
 
 .slider {
   padding: 1.5rem 2rem 3rem 2rem;
+}
+.slider .slide {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 992px) {
+  .slider .slide {
+    flex-direction: row-reverse !important;
+  }
 }
 .slider .slide .slider__img-container .img-1 {
   width: min(84%, 450px);
@@ -44,7 +53,7 @@ body {
   box-shadow: 0px 20px 50px -10px rgba(73, 73, 123, 0.7);
 }
 .slider .slide .slider__text-container {
-  margin-top: clamp(2rem, 10vw, 15rem);
+  margin-top: clamp(2rem, 12vw, 20rem);
 }
 .slider .slide .slider__text-container .slider__text {
   text-align: center;
