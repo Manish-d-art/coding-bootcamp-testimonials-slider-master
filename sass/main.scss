@@ -9,6 +9,10 @@
 $DarkBlue: hsl(240, 38%, 20%);
 $GrayishBlue: hsl(240, 18%, 77%);
 
+.y{
+    display: none !important;
+}
+
 body{
     font-size: 17px;
     font-family: 'Inter', sans-serif;
@@ -16,9 +20,9 @@ body{
     background-repeat: no-repeat,no-repeat,no-repeat;
     background-position:20px 25px,-20px 90vh,42vw 55vh;
     background-size: 90%,contain,15%;
-    @media (min-width:500px) and (max-width:991px) {
+    @media (min-width:600px) and (max-width:991px) {
         background-position:100px 25px,-20px 100vh,240px 547px !important;
-        background-size: 70%,contain,15% !important;
+        background-size: 72%,contain,15% !important;
     }
     @media (min-width:1100px) {
         background-position: 92% 46px, -105px 88vh, 366px 182px !important;
@@ -31,9 +35,15 @@ body{
 }
 
 .slider{
+    position: relative;
 
-    padding: 1.5rem 2rem 3rem 2rem;
     .slide{
+        position: absolute;
+        top: 0;
+        overflow: hidden;
+        transition: .3s;
+        padding: 1.5rem 2rem 3rem 2rem;
+        width: 100%;
         display: flex;
         flex-direction: column;
         @media (min-width:992px) {
@@ -45,7 +55,7 @@ body{
             // padding:clamp(2rem,5vw,5rem);
             flex-basis: 50%;
 
-            .img-1{
+            .img{
                 width: min(84%, 450px);
                 display: block;
                 margin: 0 auto;
@@ -77,7 +87,6 @@ body{
             }
 
             @media (min-width:992px) and (max-width:1249px) {
-                // transform: translate(-292px, 425px);
                 transform: translate(195px, 396px);
                 
             }
@@ -88,19 +97,25 @@ body{
             flex-basis: 50%;
             margin-top: clamp(2rem,12vw,20rem);
             position: relative;
+            .text-1{
+                padding:0 .7rem;
+            }
+            .text-2{
+                padding: 0 1.2rem;
+            }
             .slider__text{
                 text-align: center;
                 color: rgba(32, 32, 70, 0.7);
-                // font-weight: 500;
                 line-height: 1.3;
                 @media (min-width:992px) {
                     font-size: 32px;
                     text-align: start !important;
                     position: absolute;
                     transform: translateX(30%);
-                    padding: 0.5rem;
+                    padding: 0.3rem;
                 }
             }
+            
         }
 
         .hero-block{
@@ -112,10 +127,8 @@ body{
 
             @media (min-width:992px) {
                 font-size: 22px;
-                // text-align: start ;
                 flex-direction: row !important;
                 align-items: baseline !important;
-                // align-items: start !important;
             }
 
             .hero-name{
