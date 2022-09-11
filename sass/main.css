@@ -49,19 +49,13 @@ body {
   box-shadow: 0px 20px 50px -10px rgba(73, 73, 123, 0.7);
   z-index: 1;
 }
-@media (min-width: 1250px) {
+@media (min-width: 992px) {
   .slider .slider__arrow-contanier {
-    position: absolute;
+    top: clamp(30rem, 40vw, 34rem);
+    left: clamp(9rem, 20vw, 14rem);
     width: 100px !important;
     height: 50px !important;
     border-radius: 30px !important;
-  }
-}
-@media (min-width: 992px) and (max-width: 1249px) {
-  .slider .slider__arrow-contanier {
-    width: 90px !important;
-    height: 45px !important;
-    border-radius: 25px !important;
   }
 }
 .slider .slide {
