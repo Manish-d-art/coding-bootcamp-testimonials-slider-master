@@ -5,10 +5,6 @@
   box-sizing: border-box;
 }
 
-.y {
-  display: none !important;
-}
-
 body {
   font-size: 17px;
   font-family: "Inter", sans-serif;
