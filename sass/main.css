@@ -51,8 +51,8 @@ body {
 }
 @media (min-width: 992px) {
   .slider .slider__arrow-contanier {
-    top: clamp(30rem, 40vw, 34rem);
-    left: clamp(9rem, 20vw, 14rem);
+    top: clamp(30rem, 43vw, 34rem);
+    left: clamp(9rem, 18vw, 14rem);
     width: 100px !important;
     height: 50px !important;
     border-radius: 30px !important;
