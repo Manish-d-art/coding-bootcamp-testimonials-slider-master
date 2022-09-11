@@ -32,7 +32,39 @@ body{
 }
 
 .slider{
+
     position: relative;
+
+    .slider__arrow-contanier{
+        width:80px;
+        height:40px;
+        background-color:white ;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 auto;
+        border-radius: 20px;
+        position: relative;
+        transform: translateY(299px);
+        box-shadow: 0px 20px 50px -10px rgba(73, 73, 123, 0.7);
+        z-index: 1;
+        @media (min-width:1250px) {
+        position: absolute;
+        transform: translate(-409px, 496px);
+        width:100px !important;
+        height:50px !important;
+        border-radius: 30px !important;
+        }
+
+        @media (min-width:992px) and (max-width:1249px) {
+            transform: translate(195px, 396px);
+            width:90px !important;
+            height:45px !important;
+            border-radius: 25px !important;
+
+        }
+
+    }
 
     .slide{
         position: absolute;
@@ -65,35 +97,7 @@ body{
             }
 
         }
-        .slider__arrow-contanier{
-            width:80px;
-            height:40px;
-            background-color:white ;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 0 auto;
-            border-radius: 20px;
-            position: relative;
-            transform: translateY(-20px);
-            box-shadow: 0px 20px 50px -10px rgba(73, 73, 123, 0.7);
-            @media (min-width:1250px) {
-            position: absolute;
-            transform: translate(-409px, 496px);
-            width:100px !important;
-            height:50px !important;
-            border-radius: 30px !important;
-            }
-
-            @media (min-width:992px) and (max-width:1249px) {
-                transform: translate(195px, 396px);
-                width:90px !important;
-                height:45px !important;
-                border-radius: 25px !important;
-
-            }
-
-        }
+       
 
         .slider__text-container{
             flex-basis: 50%;
