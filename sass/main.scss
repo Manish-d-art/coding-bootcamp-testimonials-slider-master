@@ -49,13 +49,13 @@ body{
         margin: 0 auto;
         border-radius: 20px;
         position: relative;
-        top: clamp(15rem,80vw,31rem);
+        top: clamp(14rem,80vw,31rem);
         box-shadow: 0px 20px 50px -10px rgba(73, 73, 123, 0.7);
         z-index: 1;
         
 
         @media (min-width:992px) {
-            top:clamp(30rem,43vw,34rem);
+            top:clamp(30rem,46vw,34rem);
             left:clamp(9rem,18vw,14rem);
             width:100px !important;
             height:50px !important;
