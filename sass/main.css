@@ -7,6 +7,7 @@
 
 body {
   font-size: 17px;
+  height: 100vh;
   font-family: "Inter", sans-serif;
   background: url("/assets/images/pattern-bg.svg"), url("/assets/images/pattern-curve.svg"), url("/assets/images/pattern-quotes.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
@@ -34,6 +35,8 @@ body {
 
 .slider {
   position: relative;
+  height: 100%;
+  overflow: hidden;
 }
 .slider .heading {
   font-size: 0;
