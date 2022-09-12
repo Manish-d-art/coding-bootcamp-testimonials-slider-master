@@ -35,6 +35,9 @@ body {
 .slider {
   position: relative;
 }
+.slider .heading {
+  font-size: 0;
+}
 .slider .slider__arrow-contanier {
   width: 80px;
   height: 40px;
@@ -79,6 +82,7 @@ body {
 }
 .slider .slide .slider__img-container .img {
   width: min(84%, 450px);
+  border-radius: 5px;
   display: block;
   margin: 0 auto;
   margin-top: clamp(2rem, 5vw, 3rem);
