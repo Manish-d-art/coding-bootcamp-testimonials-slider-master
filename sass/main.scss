@@ -22,7 +22,7 @@ body{
         background-size: 72%,600px,15% !important;
     }
     @media (min-width:1100px) {
-        background-position: 92% 46px, -30px 87vh, 366px 182px !important;
+        background-position: 92% 46px, -30px 85vh, 366px 182px !important;
         background-size: min(80%, 617px), 700px, 100px !important;
     }
     @media (min-width: 992px) and (max-width:1099px){
@@ -30,6 +30,7 @@ body{
         background-size: min(80%, 517px), 600px, 100px !important;
     }
 }
+
 
 .slider{
 
@@ -53,6 +54,13 @@ body{
         box-shadow: 0px 20px 50px -10px rgba(73, 73, 123, 0.7);
         z-index: 1;
         
+        button{
+            all: unset;
+        }
+
+        .arrow-left,.arrow-right{
+            padding: .5rem;
+        }
 
         @media (min-width:992px) {
             top:clamp(30rem,46vw,34rem);

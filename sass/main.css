@@ -21,7 +21,7 @@ body {
 }
 @media (min-width: 1100px) {
   body {
-    background-position: 92% 46px, -30px 87vh, 366px 182px !important;
+    background-position: 92% 46px, -30px 85vh, 366px 182px !important;
     background-size: min(80%, 617px), 700px, 100px !important;
   }
 }
@@ -51,6 +51,12 @@ body {
   top: clamp(14rem, 80vw, 31rem);
   box-shadow: 0px 20px 50px -10px rgba(73, 73, 123, 0.7);
   z-index: 1;
+}
+.slider .slider__arrow-contanier button {
+  all: unset;
+}
+.slider .slider__arrow-contanier .arrow-left, .slider .slider__arrow-contanier .arrow-right {
+  padding: 0.5rem;
 }
 @media (min-width: 992px) {
   .slider .slider__arrow-contanier {
