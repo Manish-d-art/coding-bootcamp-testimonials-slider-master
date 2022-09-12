@@ -10,19 +10,19 @@ body {
   font-family: "Inter", sans-serif;
   background: url("/assets/images/pattern-bg.svg"), url("/assets/images/pattern-curve.svg"), url("/assets/images/pattern-quotes.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: 20px 25px, -20px 90vh, 42vw 55vh;
-  background-size: 90%, contain, 15%;
+  background-position: 20px 25px, -17px 91vh, 42vw 55vh;
+  background-size: 90%, 350px, 15%;
 }
 @media (min-width: 600px) and (max-width: 991px) {
   body {
     background-position: 100px 25px, -20px 100vh, 240px 547px !important;
-    background-size: 72%, contain, 15% !important;
+    background-size: 72%, 370px, 15% !important;
   }
 }
 @media (min-width: 1100px) {
   body {
-    background-position: 92% 46px, -105px 88vh, 366px 182px !important;
-    background-size: min(80%, 617px), contain, 100px !important;
+    background-position: 92% 46px, -60px 84vh, 366px 182px !important;
+    background-size: min(80%, 617px), 700px, 100px !important;
   }
 }
 @media (min-width: 992px) and (max-width: 1099px) {
