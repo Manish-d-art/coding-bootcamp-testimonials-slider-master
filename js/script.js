@@ -1,8 +1,8 @@
 'user strict'
 
 const slides=document.querySelectorAll('.slide');
-const leftBtn=document.querySelector('.arrow-left');
-const rightBtn=document.querySelector('.arrow-right');
+const btnLeft=document.querySelector('.arrow-left');
+const btnRight=document.querySelector('.arrow-right');
 
 
 let curSlide=0;
@@ -35,4 +35,8 @@ const prevSlide=function(){
 
     goToSlide(curSlide);
 };
+
+btnRight.addEventListener('click',nextSlide);
+btnLeft.addEventListener('click',prevSlide);
+
 
