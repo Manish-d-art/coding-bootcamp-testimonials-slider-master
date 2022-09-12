@@ -15,20 +15,20 @@ body {
 }
 @media (min-width: 600px) and (max-width: 991px) {
   body {
-    background-position: 100px 25px, -20px 100vh, 240px 547px !important;
-    background-size: 72%, 370px, 15% !important;
+    background-position: 100px 25px, -20px 90vh, 240px 547px !important;
+    background-size: 72%, 600px, 15% !important;
   }
 }
 @media (min-width: 1100px) {
   body {
-    background-position: 92% 46px, -60px 84vh, 366px 182px !important;
+    background-position: 92% 46px, -30px 87vh, 366px 182px !important;
     background-size: min(80%, 617px), 700px, 100px !important;
   }
 }
 @media (min-width: 992px) and (max-width: 1099px) {
   body {
     background-position: 98% 56px, -73px 81vh, 294px 137px !important;
-    background-size: min(80%, 517px), contain, 100px !important;
+    background-size: min(80%, 517px), 600px, 100px !important;
   }
 }
 
