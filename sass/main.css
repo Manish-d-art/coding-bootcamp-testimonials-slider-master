@@ -70,7 +70,6 @@ body {
 .slider .slide {
   position: absolute;
   top: 0;
-  overflow: hidden;
   transition: 1s;
   padding: 1.5rem 2rem 3rem 2rem;
   width: 100%;
